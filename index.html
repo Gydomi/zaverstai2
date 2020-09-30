@@ -19,9 +19,10 @@
 </head>
 <body>
   <header class="header">
+    <h1 class="visually-hidden">Мой блог</h1>
     <nav class="main-nav container">
       <div class="logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link" href="#" title="На главную">
           <img src="img/logo.svg" class="logo__img" width="130" height="83" alt="blog">
         </a>
       </div>
@@ -50,8 +51,20 @@
     </nav>
   </header>
 
-  <main class="main">
-
+  <main class="main container">
+    <section class="gallery">
+      <h2 class="visually-hidden">Последние статьи</h2>
+      <div class="main-title">
+        <h2 class="galleri__title type__page-title">Все статьи</h2>
+        <!-- <div class="mail-title__list-tags list-tags">
+          <p class="list-tags__description"></p> -->
+        <button class="btn btn__tags btn__tags-js type__p type__p_compressed" type="button">
+          Выбрать тему
+          <img class="btn__tags-img" src="img/icon-dropdown.svg" width="22" height="20" alt="Выбор">
+        </button>
+        <!-- </div> -->
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
