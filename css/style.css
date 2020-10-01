@@ -26,7 +26,7 @@ body {
   font-size: 12px;
   line-height: 1.25;
   font-weight: normal;
-  color: #2E2F22;
+  color: #2e2f22;
   background-color: #fff;
 }
 
@@ -218,6 +218,7 @@ a {
 .header {
   min-height: 580px;
   width: 100%;
+  background-color: #c4c4c4;
   background-image: url("../img/bg-main.jpg");
   background-position: center center;
   background-size: cover;
@@ -270,6 +271,15 @@ a {
   margin-bottom: 50px;
 }
 
+.btn__area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 104px;
+  margin-bottom: 85px;
+}
+
 .btn__tags {
   position: relative;
   background-color: #d7d1c9;
@@ -277,14 +287,23 @@ a {
   border-radius: 10px;
 }
 
+.btn__articles {
+  padding: 12px 57px;
+  border: 1px solid #202117;
+  border-radius: 10px;
+}
+
 .btn__tags:hover,
 .btn__tags:focus,
-.btn__tags:active {
+.btn__tags:active,
+.btn__articles:hover,
+.btn__articles:focus,
+.btn__articles:active {
   outline: none;
-  box-shadow: 0 0 2px 0 rgba(215, 209, 201, 0.3),
-              0 0 4px 0 rgba(215, 209, 201, 0.2),
-              0 0 8px 0 rgba(215, 209, 201, 0.15),
-              0 0 12px 0 rgba(215, 209, 201, 0.10);
+  box-shadow: 0 0 2px 0 rgba(215, 209, 201, 0.55),
+              0 0 4px 0 rgba(215, 209, 201, 0.4),
+              0 0 8px 0 rgba(215, 209, 201, 0.35),
+              0 0 12px 0 rgba(215, 209, 201, 0.20);
 }
 
 .btn__tags-img {
@@ -302,4 +321,90 @@ a {
   top: 17px;
   width: 26px;
   height: 24px;
+}
+
+/*/ ////////////////////////////
+// Галерея
+// ///////////////////////////*/
+.gallery__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  margin-bottom: 62px;
+}
+
+.card {
+  width: 393px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.card_big {
+  position: relative;
+  width: 590px;
+  padding: 0;
+}
+
+.card:hover {
+  box-shadow: 0 0 2px 0 rgba(139, 120, 101, 0.8),
+              0 0 4px 0 rgba(139, 120, 101, 0.7),
+              0 0 8px 0 rgba(139, 120, 101, 0.6),
+              0 0 16px 0 rgba(139, 120, 101, 0.5);
+}
+
+.card_big .card__ticket {
+  position: absolute;
+  left: 82px;
+  bottom: 61px;
+  width: 426px;
+  color: #fff;
+}
+
+.card__img-wrap {
+  margin-bottom: 27px;
+  border-radius: 10px;
+  background-color: #c4c4c4;
+}
+
+.card_big .card__img-wrap {
+  margin-bottom: 0;
+}
+
+.card__img {
+  display: block;
+  border-radius: 10px;
+  width: 387px;
+  height: 268px;
+}
+
+.card_big .card__img {
+  width: 590px;
+  height: 552px;
+}
+
+.card_big .card__title {
+  font-size: 20px;
+}
+
+.card_big .card__name {
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.card__title {
+  margin-bottom: 8px;
+}
+
+.card__name {
+  margin-bottom: 12px;
+}
+
+.card__annotation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
