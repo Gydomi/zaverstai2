@@ -282,6 +282,7 @@ a {
 
 .btn__tags {
   position: relative;
+  min-width: 224px;
   background-color: #d7d1c9;
   padding: 12px 74px 12px 20px;
   border-radius: 10px;
@@ -349,6 +350,13 @@ a {
   padding: 0;
 }
 
+.card_middle {
+  position: relative;
+  width: 387px;
+  height: 525px;
+  padding: 0;
+}
+
 .card:hover {
   box-shadow: 0 0 2px 0 rgba(139, 120, 101, 0.8),
               0 0 4px 0 rgba(139, 120, 101, 0.7),
@@ -364,13 +372,29 @@ a {
   color: #fff;
 }
 
+.card_middle .card__ticket {
+  position: absolute;
+  left: 20px;
+  top: 140px;
+  width: 347px;
+}
+
+.card_middle_dark .card__ticket {
+  color: #fff;
+}
+
 .card__img-wrap {
   margin-bottom: 27px;
   border-radius: 10px;
   background-color: #c4c4c4;
 }
 
-.card_big .card__img-wrap {
+.card_middle_dark .card__img-wrap {
+  background-color: #ECC8C8;
+}
+
+.card_big .card__img-wrap,
+.card_middle .card__img-wrap {
   margin-bottom: 0;
 }
 
@@ -386,17 +410,31 @@ a {
   height: 552px;
 }
 
+.card_middle .card__img {
+  width: 387px;
+  height: 525px;
+}
+
 .card_big .card__title {
   font-size: 20px;
+}
+
+.card_middle .card__title {
+  margin-bottom: 44px;
+  font-size: 20px;
+}
+
+.card__title {
+  margin-bottom: 8px;
+}
+
+.card__subtitle {
+  margin-bottom: 17px;
 }
 
 .card_big .card__name {
   font-size: 18px;
   line-height: 1.56;
-}
-
-.card__title {
-  margin-bottom: 8px;
 }
 
 .card__name {
@@ -407,4 +445,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.card_middle h3,
+.card_middle p {
+  text-align: center;
 }
