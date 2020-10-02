@@ -205,13 +205,24 @@ a {
 }
 
 /*/ ////////////////////////////
-// Контейнер
+// Сетки
 // ///////////////////////////*/
 .container {
   width: 100%;
   padding: 0 120px;
 }
 
+.flex__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /*/ ////////////////////////////
 // Шапка
 // ///////////////////////////*/
@@ -262,7 +273,6 @@ a {
 /*/ ////////////////////////////
 // Основная часть страницы
 // ///////////////////////////*/
-
 .main-title {
   display: flex;
   flex-direction: row;
@@ -271,6 +281,61 @@ a {
   margin-bottom: 50px;
 }
 
+.aboutme {
+  margin-bottom: 85px;
+}
+
+.aboutme__title,
+.portfolio__title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.aboutme__img-wrap,
+.aboutme__content {
+  flex-grow: 1;
+}
+
+.aboutme__content {
+  padding: 40px;
+}
+
+.aboutme__img {
+  min-width: 590px;
+  height: 693px;
+  border-radius: 10px;
+}
+
+.aboutme__text {
+  margin-bottom: 30px;
+}
+
+.aboutme__link-to-form {
+  padding: 0 3px;
+  border-bottom: 1px solid #2e2f22;
+}
+
+.aboutme__link-to-form:hover {
+  background-color: #c4c4c4;
+}
+
+.aboutme__qout {
+  position: relative;
+}
+
+.aboutme__qout::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: -30px;
+  width: 2px;
+  height: 214px;
+  background-color: #D7D1C9;
+}
+
+/*/ ////////////////////////////
+// Кнопки
+// ///////////////////////////*/
 .btn__area {
   width: 100%;
   display: flex;
