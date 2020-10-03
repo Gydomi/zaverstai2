@@ -54,14 +54,14 @@
   <main class="main container type__p">
 
     <section class="article-title__wrap">
-      <h1 class="article-title">Как себя мотивировать</h1>
-      <div class="article-title__about">
+      <h1 class="article-title type__page-title">Как себя мотивировать</h1>
+      <div class="article-title__caption type_p_blure">
         <p class="article-title__tags">Теги: путешествия, друзья</p>
         <time class="article-title__date" datetime="2020-09-29">29.09.2020</time>
       </div>
     </section>
 
-    <article class="article">
+    <article class="article content-box">
       <p>
         Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам бороться
         с соблазнами» Ирины Якутенко.
@@ -84,10 +84,10 @@
       </p>
     </article>
 
-    <section class="reacts">
+    <section class="reacts content-box">
       <div class="reacts-wrap flex__row">
         <div class="reacts__likes likes">
-          <img class="likes__img" src="img/like.svg" alt="">
+          <img class="likes__img" src="img/like.svg" width="50" height="50" alt="">
           <span class="likes__count">16</span>
         </div>
         <div class="reacts__send">
@@ -111,13 +111,64 @@
         </div>
       </div>
       <h2 class="reacts__on-main">
-        <a href="" class="reacts__on-main-link">Ко всем статьям</a>
-        <img class="reacts__on-main-img" src="img/icon-right.svg" alt="">
+        <a href="" class="reacts__on-main-link">
+          Ко всем статьям
+          <img class="reacts__on-main-img" src="img/icon-right.svg" alt="">
+        </a>
       </h2>
     </section>
 
-    <section class="comments">
-
+    <section class="comments content-box_small type__p_compressed">
+      <div class="comments__saved">
+        <ul class="comments__list list-default">
+          <li class="comments__item comment">
+            <div class="comment__wrap">
+              <img class="comment__avatar" src="img/avatar01.jpg" width="50" height="50" alt="">
+              <p class="comment__name">Иван Петров</p>
+            </div>
+            <div class="comment__text">Отличная статья! Спасибо.</div>
+          </li>
+          <li class="comments__item comment">
+            <div class="comment__wrap">
+              <img class="comment__avatar" src="img/avatar02.jpg" width="50" height="50" alt="">
+              <p class="comment__name">Ксения Ксения</p>
+            </div>
+            <div class="comment__text">Отличный текст, добавила в закладки.</div>
+          </li>
+          <li class="comments__item comment">
+            <div class="comment__wrap">
+              <img class="comment__avatar" src="img/avatar03.jpg" width="50" height="50" alt="">
+              <p class="comment__name">Иван Иванов</p>
+            </div>
+            <div class="comment__text">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</div>
+          </li>
+        </ul>
+      </div>
+      <div class="comments__new">
+        <h3 class="comments__title">Оставить комментарий</h3>
+        <form class="comments__form form-post flex__row" action="">
+          <div class="form-post__elements flex__col">
+            <div class="form-post__elements-wrap">
+              <div class="form-post__name-wrap flex__col">
+                <label class="form-post__label form-post__name-label type__card-title" for="id_name">Имя</label>
+                <input class="form-post__input form-post__name-input" type="text" id="id_name" name="name_val" placeholder="google@gmail.com" required>
+              </div>
+              <div class="form-post__email-wrap flex__col">
+                <label class="form-post__label form-post__email-label type__card-title" for="id_email">Email</label>
+                <input class="form-post__input form-post__email-input" type="email" id="id_email" name="email_val" placeholder="google@gmail.com" required>
+              </div>
+            </div>
+            <div class="btn__area-form">
+              <button class="btn btn__post btn__contact-js type__p_compressed type_p_sub-dark type__p_accent" type="submit">
+                Отправить
+              </button>
+            </div>
+          </div>
+          <div class="form-post__content">
+            <textarea class="form-post__input form-post__message-input" id="id_message" name="message_val" placeholder="Написать комментарий..." rows="5" required></textarea>
+          </div>
+        </form>
+      </div>
     </section>
 
   </main>

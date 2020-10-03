@@ -212,6 +212,16 @@ a {
   padding: 0 120px;
 }
 
+.content-box {
+  max-width: 1000px;
+  margin-right: auto;
+}
+
+.content-box_small {
+  max-width: 795px;
+  margin-right: auto;
+}
+
 .flex__row {
   display: flex;
   flex-direction: row;
@@ -551,6 +561,110 @@ a {
 .card_middle h3,
 .card_middle p {
   text-align: center;
+}
+/*/ ////////////////////////////
+// Статья и реакции
+// ///////////////////////////*/
+.article {
+  margin-bottom: 40px;
+}
+
+.article-title {
+  margin-bottom: 6px;
+}
+
+.article-title__wrap {
+  margin-bottom: 50px;
+}
+
+.article figcaption {
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+.article p {
+  margin-bottom: 30px;
+}
+
+.article figure {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article figure img {
+  margin-bottom: 10px;
+}
+
+.likes__count {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.likes__img {
+  margin-right: 14px;
+}
+
+.send__item {
+  margin-left: 32px;
+}
+
+.reacts {
+  margin-bottom: 65px;
+}
+
+.reacts-wrap {
+  margin-bottom: 37px;
+}
+
+.reacts__on-main {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.36;
+}
+
+/* Комментарии */
+.comments {
+  margin-bottom: 81px;
+}
+
+.comment__name {
+  font-weight: bold;
+}
+
+.comments__title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.comments__saved {
+  padding: 45px 100px;
+  background: #ECE1E1;
+  border-radius: 10px;
+  margin-bottom: 77px;
+}
+
+.comment {
+  margin-bottom: 23px;
+}
+
+.comment__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+}
+
+.comment__avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #c4c4c4;
+  margin-right: 13px;
+}
+
+.comment__name {
+  padding: 14px 0;
 }
 
 /*/ ////////////////////////////
