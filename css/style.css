@@ -235,6 +235,10 @@ a {
   background-size: cover;
 }
 
+.header_second {
+  background-image: url("../img/bg-second.jpg");
+}
+
 .main-nav {
   display: flex;
   flex-direction: row;
@@ -285,8 +289,7 @@ a {
   margin-bottom: 85px;
 }
 
-.aboutme__title,
-.portfolio__title {
+.block-title {
   margin-bottom: 45px;
   text-align: center;
 }
@@ -333,6 +336,32 @@ a {
   background-color: #D7D1C9;
 }
 
+.contact {
+  margin-bottom: 80px;
+  padding: 0 122px;
+}
+
+.footer {
+  background-color: #D7D1C9;
+}
+
+.sotial__list {
+  margin-top: 65px;
+  margin-bottom: 91px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 630px;
+}
+
+.sotial__link {
+  border-bottom: 1px solid transparent;
+}
+
+.sotial__link:hover {
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(46, 47, 34, 0.7);
+}
+
 /*/ ////////////////////////////
 // Кнопки
 // ///////////////////////////*/
@@ -345,6 +374,13 @@ a {
   margin-bottom: 85px;
 }
 
+.btn__area-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .btn__tags {
   position: relative;
   min-width: 224px;
@@ -353,7 +389,7 @@ a {
   border-radius: 10px;
 }
 
-.btn__articles {
+.btn__main {
   padding: 12px 57px;
   border: 1px solid #202117;
   border-radius: 10px;
@@ -362,9 +398,9 @@ a {
 .btn__tags:hover,
 .btn__tags:focus,
 .btn__tags:active,
-.btn__articles:hover,
-.btn__articles:focus,
-.btn__articles:active {
+.btn__main:hover,
+.btn__main:focus,
+.btn__main:active {
   outline: none;
   box-shadow: 0 0 2px 0 rgba(215, 209, 201, 0.55),
               0 0 4px 0 rgba(215, 209, 201, 0.4),
@@ -515,4 +551,55 @@ a {
 .card_middle h3,
 .card_middle p {
   text-align: center;
+}
+
+/*/ ////////////////////////////
+// Формы
+// ///////////////////////////*/
+.form-main__input,
+.form-main__input::placeholder {
+  font-family: "OpenSans", "Candara", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #202117;
+}
+
+.form-main__input {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #202117;
+  border-radius: 10px;
+}
+
+.form-main__input::placeholder {
+  opacity: 0.7;
+}
+
+.form-main__label {
+  margin-bottom: 12px;
+}
+
+.form-main {
+  padding: 55px 80px 60px;
+  background-color: #C4C4C4;
+  border-radius: 10px;
+  background-image: url("../img/bg-form.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.form-main__email-wrap {
+  flex-grow: 1;
+}
+
+.form-main__name-wrap {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.form-main__message-input {
+  min-height: 290px;
 }

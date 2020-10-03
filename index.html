@@ -22,28 +22,28 @@
     <h1 class="visually-hidden">Мой блог</h1>
     <nav class="main-nav container">
       <div class="logo">
-        <a class="logo__link" href="#" title="На главную">
+        <a class="logo__link" href="index.html" title="На главную">
           <img src="img/logo.svg" class="logo__img" width="130" height="83" alt="blog">
         </a>
       </div>
       <ul class="main-nav__menu main-menu list-default">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
+          <a class="main-menu__link" href="index.html#articles">
             <p class="main-menu__text type__main-nav">Статьи</p>
           </a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
+          <a class="main-menu__link" href="index.html#aboutme">
             <p class="main-menu__text type__main-nav">Обо мне</p>
           </a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
+          <a class="main-menu__link" href="index.html#portfolio">
             <p class="main-menu__text type__main-nav">Портфолио</p>
           </a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
+          <a class="main-menu__link" href="index.html#writeme">
             <p class="main-menu__text type__main-nav">Написать мне</p>
           </a>
         </li>
@@ -54,11 +54,10 @@
   <main class="main container type__p">
 
     <section class="gallery">
+      <a name="articles"></a>
       <h2 class="visually-hidden">Последние статьи</h2>
       <div class="main-title">
         <h2 class="galleri__title type__page-title">Все статьи</h2>
-        <!-- <div class="mail-title__list-tags list-tags">
-          <p class="list-tags__description"></p> -->
         <button class="btn btn__tags btn__tags-js type__p_compressed" type="button">
           Выбрать тему
           <img class="btn__tags-img" src="img/icon-dropdown.svg" width="22" height="20" alt="Выбор">
@@ -68,7 +67,7 @@
       <ul class="gallery__list list-default">
         <li class="gallery__item">
 
-          <a href="#" class="card">
+          <a href="article.html" class="card">
             <div class="card__img-wrap">
               <img class="card__img" src="img/article-germany.jpg" alt="" width="387" height="268">
             </div>
@@ -85,7 +84,7 @@
         </li>
         <li class="gallery__item">
 
-          <a href="#" class="card">
+          <a href="article.html" class="card">
             <div class="card__img-wrap">
               <img class="card__img" src="img/article-koldbryu.jpg" alt="" width="387" height="268">
             </div>
@@ -102,7 +101,7 @@
         </li>
         <li class="gallery__item">
 
-          <a href="#" class="card">
+          <a href="article.html" class="card">
             <div class="card__img-wrap">
               <img class="card__img" src="img/article-books.jpg" alt="" width="387" height="268">
             </div>
@@ -121,7 +120,7 @@
       <ul class="gallery__list list-default">
         <li class="gallery__item">
 
-          <a href="#" class="card card_big">
+          <a href="article.html" class="card card_big">
             <div class="card__img-wrap">
               <img class="card__img" src="img/article-photos.jpg" alt="" width="387" height="268">
             </div>
@@ -138,7 +137,7 @@
         </li>
         <li class="gallery__item">
 
-          <a href="#" class="card card_big">
+          <a href="article.html" class="card card_big">
             <div class="card__img-wrap">
               <img class="card__img" src="img/article-chisekace.jpg" alt="" width="387" height="268">
             </div>
@@ -155,14 +154,15 @@
         </li>
       </ul>
       <div class="btn__area">
-        <button class="btn btn__articles btn__articles-js type__p_compressed type_p_sub-dark" type="button">
+        <button class="btn btn__main btn__articles-js type__p_compressed type_p_sub-dark" type="button">
           Показать ещё
         </button>
       </div>
     </section>
 
     <section class="aboutme">
-      <h2 class="aboutme__title type__page-title">Обо мне</h2>
+      <a name="aboutme"></a>
+      <h2 class="block-title aboutme__title type__page-title">Обо мне</h2>
       <div class="aboutme__wrap flex__row">
         <div class="aboutme__img-wrap">
           <img class="aboutme__img" src="img/myself.jpg" alt="" width="590" height="693">
@@ -200,7 +200,8 @@
     </section>
 
     <section class="portfolio">
-      <h2 class="portfolio__title type__page-title">Портфолио</h2>
+      <a name="portfolio"></a>
+      <h2 class="block-title portfolio__title type__page-title">Портфолио</h2>
       <ul class="gallery__list list-default">
         <li class="gallery__item">
 
@@ -254,21 +255,68 @@
         </li>
       </ul>
       <div class="btn__area">
-        <button class="btn btn__articles btn__articles-js type__p_compressed type_p_sub-dark type__p_accent" type="button">
+        <button class="btn btn__main btn__portfolio-js type__p_compressed type_p_sub-dark type__p_accent" type="button">
           Показать ещё
         </button>
       </div>
     </section>
 
+    <section class="contact">
+      <a name="writeme"></a>
+      <h2 class="block-title portfolio__title type__page-title">Написать мне</h2>
+      <form class="contact__form form-main" action="">
+        <div class="form-main__content">
+          <div class="form-main__wrap flex__row type__p type__p_compressed">
+            <div class="form-main__name-wrap flex__col">
+              <label class="form-main__label form-main__name-label type__card-title" for="id_name">Ваше имя</label>
+              <input class="form-main__input form-main__name-input" type="text" id="id_name" name="name_val" placeholder="Иван Иванов" required>
+            </div>
+            <div class="form-main__email-wrap flex__col">
+              <label class="form-main__label form-main__email-label type__card-title" for="id_email">Email</label>
+              <input class="form-main__input form-main__email-input" type="email" id="id_email" name="email_val" placeholder="google@gmail.com" required>
+            </div>
+          </div>
+          <div class="form-main__message-wrap flex__col">
+            <label class="form-main__label form-main__message-label type__card-title" for="id_message">Сообщение</label>
+            <textarea class="form-main__input form-main__message-input" id="id_message" name="message_val" placeholder="Напишите здесь ваше сообщение." rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="btn__area-form">
+          <button class="btn btn__main btn__contact-js type__p_compressed type_p_sub-dark type__p_accent" type="submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </section>
   </main>
 
-  <footer class="footer">
-
+  <footer class="footer type__main-nav">
+    <nav class="footer__sotial sotial container">
+      <ul class="sotial__list list-default flex__row">
+        <li class="sotial__item">
+          <a class="sotial__link" href="#">
+            <p class="sotial__text">ВК</p>
+          </a>
+        </li>
+        <li class="sotial__item">
+          <a class="sotial__link" href="#">
+            <p class="sotial__text">Телеграм</p>
+          </a>
+        </li>
+        <li class="sotial__item">
+          <a class="sotial__link" href="#">
+            <p class="sotial__text">Инстаграм</p>
+          </a>
+        </li>
+        <li class="sotial__item">
+          <a class="sotial__link" href="#">
+            <p class="sotial__text">Твиттер</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </footer>
 
-  <!-- Формы/попапы  -->
-
-  <!-- Подключение скриптов -->
   <script src="js/main.js"></script>
 
 </body>
