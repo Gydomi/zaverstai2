@@ -58,14 +58,24 @@
       <h2 class="visually-hidden">Последние статьи</h2>
       <div class="main-title">
         <h2 class="galleri__title type__page-title">Все статьи</h2>
-        <button class="btn btn__tags btn__tags-js type__p_compressed" type="button">
+        <div class="btn__tags-wrap">
+          <select class="btn btn__tags btn__tags-js type__p_compressed" name="namelist">
+            <option value="none">Выбрать тему</option>
+            <option value="travel">Путешествия</option>
+            <option value="city">Город</option>
+            <option value="book">Книги</option>
+            <option value="photo">Фотографии</option>
+            <option value="food">Рецепты</option>
+          </select>
+          <img class="btn__tags-img" src="img/icon-dropdown.svg" width="22" height="20" alt="Выбор">
+        </div>
+        <!-- <button class="btn btn__tags btn__tags-js type__p_compressed" type="button">
           Выбрать тему
           <img class="btn__tags-img" src="img/icon-dropdown.svg" width="22" height="20" alt="Выбор">
-        </button>
-        <!-- </div> -->
+        </button> -->
       </div>
       <ul class="gallery__list list-default">
-        <li class="gallery__item">
+        <li class="gallery__item" data-tags="travel">
 
           <a href="article.html" class="card">
             <div class="card__img-wrap">
@@ -82,7 +92,7 @@
           </a>
 
         </li>
-        <li class="gallery__item">
+        <li class="gallery__item"  data-tags="city">
 
           <a href="article.html" class="card">
             <div class="card__img-wrap">
@@ -99,7 +109,7 @@
           </a>
 
         </li>
-        <li class="gallery__item">
+        <li class="gallery__item"  data-tags="book">
 
           <a href="article.html" class="card">
             <div class="card__img-wrap">
@@ -118,7 +128,7 @@
         </li>
       </ul>
       <ul class="gallery__list list-default">
-        <li class="gallery__item">
+        <li class="gallery__item"  data-tags="photo">
 
           <a href="article.html" class="card card_big">
             <div class="card__img-wrap">
@@ -135,7 +145,7 @@
           </a>
 
         </li>
-        <li class="gallery__item">
+        <li class="gallery__item"  data-tags="food">
 
           <a href="article.html" class="card card_big">
             <div class="card__img-wrap">
@@ -269,11 +279,11 @@
           <div class="form-main__wrap flex__row type__p type__p_compressed">
             <div class="form-main__name-wrap flex__col">
               <label class="form-main__label form-main__name-label type__card-title" for="id_name">Ваше имя</label>
-              <input class="form-main__input form-main__name-input" type="text" id="id_name" name="name_val" placeholder="Иван Иванов" minlength="10" maxlength="200" required>
+              <input class="form-main__input form-main__name-input" type="text" id="id_name" name="name_val" placeholder="Иван Иванов" required>
             </div>
             <div class="form-main__email-wrap flex__col">
               <label class="form-main__label form-main__email-label type__card-title" for="id_email">Email</label>
-              <input class="form-main__input form-main__email-input" type="email" id="id_email" name="email_val" placeholder="google@gmail.com" minlength="10" maxlength="200" required>
+              <input class="form-main__input form-main__email-input" type="email" id="id_email" name="email_val" placeholder="google@gmail.com" required>
             </div>
           </div>
           <div class="form-main__message-wrap flex__col">
